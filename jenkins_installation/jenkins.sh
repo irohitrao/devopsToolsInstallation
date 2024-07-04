@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # install jenkins
 sudo yum update -y
 sudo wget -O /etc/yum.repos.d/jenkins.repo \
