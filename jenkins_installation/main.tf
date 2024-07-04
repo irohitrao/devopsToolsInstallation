@@ -7,7 +7,7 @@ resource "aws_instance" "jenkins_server" {
     instance_type = "t2.micro"
     key_name = "rohitmryadav2"
     vpc_security_group_ids = [aws_security_group.demo-sg.id]
-    # user_data = "${file("userdata.sh")}"
+    user_data = file("jenkins.sh")
     root_block_device {
       volume_size = 25  # Size of the root volume in GB
       volume_type = "gp3"  # General Purpose SSD (default)
