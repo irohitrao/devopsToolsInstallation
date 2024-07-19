@@ -17,7 +17,6 @@ pipeline {
             steps {
                 script {
                     // Initialize Terraform in the directory where your Terraform code is
-                    sh 'cd infra'
                     sh 'terraform init -input=false'
                 }
             }
@@ -32,13 +31,13 @@ pipeline {
             }
         }
         
-        stage('Terraform Apply') {
-            steps {
-                script {
-                    // Apply the Terraform plan
-                    // sh 'terraform apply -input=false -auto-approve tfplan'
-                }
-            }
-        }
+        // stage('Terraform Apply') {
+        //     steps {
+        //         script {
+        //             // Apply the Terraform plan
+        //             sh 'terraform apply -input=false -auto-approve tfplan'
+        //         }
+        //     }
+        // }
     }
 }
