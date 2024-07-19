@@ -1,13 +1,9 @@
-provider "aws" {
-    region = "ap-south-1"
-}
-
 resource "aws_instance" "jenkins_server" {
-    ami = "ami-04f8d7ed2f1a54b14"
-    instance_type = "t2.micro"
+    ami = "ami-05b0082e5c4d7c17d"
+    instance_type = "t2.medium"
     key_name = "rohitmryadav2"
     vpc_security_group_ids = [aws_security_group.demo-sg.id]
-    # user_data = "${file("userdata.sh")}"
+    user_data = file("jenkins.sh")
     root_block_device {
       volume_size = 25  # Size of the root volume in GB
       volume_type = "gp3"  # General Purpose SSD (default)
