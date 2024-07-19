@@ -1,7 +1,3 @@
-provider "aws" {
-    region = "ap-south-1"
-}
-
 resource "aws_instance" "jenkins_server" {
     ami = "ami-05b0082e5c4d7c17d"
     instance_type = "t2.medium"
