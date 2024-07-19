@@ -1,3 +1,5 @@
 *.pem
 inventory
 *.tar.gz
+.terraform.lock*
+.terraform
