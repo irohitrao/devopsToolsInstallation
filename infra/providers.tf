@@ -10,6 +10,6 @@ terraform {
 }
 
 provider "aws" {
-  region = "ap-south-1"
+  region = "var.region"
   # You can add other provider configuration settings here if needed
 }
