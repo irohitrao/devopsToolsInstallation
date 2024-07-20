@@ -1,5 +1,6 @@
 resource "aws_instance" "ubuntu" {
-    ami = "ami-05b0082e5c4d7c17d"
+    count = var.instance_count
+    ami = data.aws_ami.ubuntu
     instance_type = "t2.medium"
     key_name = "rohitmryadav2"
     vpc_security_group_ids = [aws_security_group.demo-sg.id]
