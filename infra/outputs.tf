@@ -1,5 +1,5 @@
 output "ubuntu_server_ip" {
-  value = aws_instance.jenkins_server.public_ip
+  value = aws_instance.ubuntu.public_ip
 }
 
 # output "jenkins_admin_password" {
