@@ -1,7 +1,7 @@
 resource "aws_instance" "ubuntu" {
     count = var.instance_count
     ami = data.aws_ami.ubuntu
-    instance_type = "t2.medium"
+    instance_type = var.instance_type
     key_name = "rohitmryadav2"
     vpc_security_group_ids = [aws_security_group.demo-sg.id]
     #user_data = file("jenkins.sh")
