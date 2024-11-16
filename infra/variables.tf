@@ -4,7 +4,7 @@ variable "region" {
     default = "us-east-1"
 }
 
-variable "instancenametag" {
+variable "instancenametag-master" {
     type = string
     description = "Tag for Ec2 instance"
     default = "Terraform Provisioned Ec2"
