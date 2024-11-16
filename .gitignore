@@ -3,3 +3,4 @@ inventory
 *.tar.gz
 .terraform.lock*
 .terraform
+.idea/*
