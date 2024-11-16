@@ -4,3 +4,4 @@ inventory
 .terraform.lock*
 .terraform
 .idea/*
+.idea
