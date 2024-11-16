@@ -3,7 +3,7 @@
 ## Ref: https://linuxhint.com/create-security-groups-aws-terraform/
 #########################################################
 
-resource "aws_security_group" "demo-sg" {
+resource "aws_security_group" "demo-sgp" {
   name = "sec-grp"
   description = "Allow HTTP and SSH traffic via Terraform"
 
