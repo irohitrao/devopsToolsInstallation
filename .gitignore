@@ -3,3 +3,6 @@ inventory
 *.tar.gz
 .terraform.lock*
 .terraform
+.idea/*
+.idea
+.idea//workspace.xml
